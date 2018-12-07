@@ -1,6 +1,5 @@
  <?php
   include_once('conexion.php');
-   
 	$mensajeOk=false;
 	$mensajeError='El sistema no se encuentra disponible';
 	if(isset($_POST['username'],$_POST['password'])):
@@ -16,7 +15,7 @@
 					$_SESSION['idusuario']=$Usua[0];
 					$_SESSION['username']=$Usua[3];
 					$_SESSION['tipousuario']=$Usua[5];
-					$mensajeError='Logueado correctamente ok.';
+					$mensajeError='Logueado correctamente.';
 				else:
 					$mensajeError='Usuario o contraseña incorrecta.';
 				endif;
@@ -24,7 +23,7 @@
 				$mensajeError='Contraseña incorrecta.';
 			endif;
 		else:
-			$mensajeError='Usuario no existe ok.';
+			$mensajeError='Usuario no existe.';
 		endif;
 	else:
 		$mensajeError='Todos los datos son requeridos.';

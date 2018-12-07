@@ -6,15 +6,11 @@
     if (isset($_SESSION['username'])){
         $username = $_SESSION['username'];
         $tipousuario = $_SESSION['tipousuario'];
-        
-
-    }else{
- header('Location: index.php');//Aqui lo redireccionas al lugar que quieras.
+        }
+        else{
+ header('index.php');//Aqui lo redireccionas al lugar que quieras.
      die() ;
-
     }
-
-
  ?>
 
 <!DOCTYPE html>

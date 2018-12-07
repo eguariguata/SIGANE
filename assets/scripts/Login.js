@@ -19,10 +19,5 @@ $(document).ready(function(){
 				alert('Datos incorrectos');
 			}
 		});
-
-		// alert("Funciona");
 	});
-
-
-
 });
