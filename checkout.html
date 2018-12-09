@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/datepicker.css" rel="stylesheet" type="text/css" />
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="assets/css/header-user-dropdown.css">
     <link href="./checkout_files/form-validation.css" rel="stylesheet">
@@ -150,7 +151,14 @@
               <div class="col-3 col-md-3 mb-3">
                 <div class="form-group">
                 <label for="lastName">Fecha de Nacimiento</label>
-                <input type="text" class="form-control" id="birth-date" placeholder="" value="" required="">
+                <div class="input-group date">
+                                <input class="form-control" type="text" />
+                               <span class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="fa fa-calendar"></i>
+                                    </button></span>
+                            </div>
+               <!--  <input type="text" class="form-control" id="birth-date" placeholder="MM/DD/YYYY" value="" required=""> -->
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div></div>
@@ -343,7 +351,7 @@
             </div><!-- end row -->
             
             <hr class="mb-4">
-            <button class="btn btn-success btn-lg" type="submit">Enviar</button>
+            <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-save"></i> Enviar</button>
           </form>
         </div><!-- end col-9 -->
       </div><!-- end of row -->
@@ -364,6 +372,7 @@
     <script src="assets/plugins/js/mask-script.js"></script>
     <script src="assets/scripts/Login.js"></script>
     <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap-datepicker.js"></script>
     
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -387,6 +396,12 @@
         }, false);
       })();
     </script>
-  
-
+    <script type="text/javascript">
+       $(function () {
+            $(".date").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        });
+    </script>
 </body></html>
