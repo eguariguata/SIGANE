@@ -10,17 +10,50 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
-
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/header-user-dropdown.css">
     <link href="./checkout_files/form-validation.css" rel="stylesheet">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"> -->
+    
   </head>
 
   <body class="bg-light">
 
+
+<header class="header-user-dropdown fixed-top">
+
+  <div class="header-limiter">
+    <h1><img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="52" height="52"></h1>
+
+    <nav>
+      <a href="#">Nuevo</a>
+      <a href="#">Modificar</a>
+      <a href="#">Consultar</a>
+      <a href="#">Eliminar</a>
+      <a href="#">Reportes <span class="header-new-feature">new</span></a>
+    </nav>
+
+
+    <div class="header-user-menu">
+      <img src="assets/img/2.jpg" alt="User Image"/>
+
+      <ul>
+        <li><a href="logout.php"><i class="fa fa-users fa-fw"></i> Crear Usuario</a></li>
+        <li class="divider"></li>
+        <li><a href="logout.php"><i class="fa fa-gear fa-fw"></i> Configuración</a></li>
+        <li class="divider"></li>
+        <li><a href="logout.php" class="highlight"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</header><br><br><br>
+
+
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="72" height="72">
+        <!-- <img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="72" height="72"> -->
         <h2>Sistema de Registro de Pre-Inscripción</h2>
         <p class="lead"></p>
       </div>
@@ -76,30 +109,34 @@
           <form class="needs-validation" novalidate="">
             <div class="row">
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="firstName">Nombres</label>
                 <input type="text" class="form-control" id="nombres" placeholder="Nombres" value="" required=""><span class="add-on"><i class="icon-calendar"></i></span>
                 <div class="invalid-feedback">
                   Valid first name is required.
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="lastName">Apellidos</label>
                 <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" value="" required="">
                 <div class="invalid-feedback">
                   Valid last name is required.
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="firstName">Cedula Escolar</label>
                 <input type="text" class="form-control" id="cedulaescolar" placeholder="" value="" required=""><span class="add-on"><i class="icon-calendar"></i></span>
                 <div class="invalid-feedback">
                   Valid first name is required.
-                </div>
+                </div></div>
               </div>
             </div>
 
             <div class="row">              
-              <div class="col-3 col-md-3 mb-3">                
+              <div class="col-3 col-md-3 mb-3">
+              <div class="form-group">                
                 <label for="estado">Lugar de Nacimiento</label>
                 <select class="custom-select d-block w-100" id="lugar_nac" required="">
                   <option value="">Seleccione...</option>
@@ -108,38 +145,42 @@
                 </select>
                 <div class="invalid-feedback">
                   Please select a valid state.
-                </div>
+                </div></div>
               </div>
               <div class="col-3 col-md-3 mb-3">
+                <div class="form-group">
                 <label for="lastName">Fecha de Nacimiento</label>
                 <input type="text" class="form-control" id="birth-date" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                   Valid last name is required.
-                </div>
+                </div></div>
               </div>
               <div class="col-3 col-md-3 mb-3">
+                <div class="form-group">
                 <label for="firstName">Edad</label>
                 <input type="text" class="form-control" id="edad_alumno" placeholder="" value="" required=""><span class="add-on"><i class="icon-calendar"></i></span>
                 <div class="invalid-feedback">
                   Valid first name is required.
-                </div>
+                </div></div>
               </div>
               <div class="col-3 col-md-3 mb-3">
+                <div class="form-group">
                 <label for="firstName">N° de Teléfono</label>
                 <input type="text" class="form-control" id="phone-number" placeholder="" value="" required=""><span class="add-on"><i class="icon-calendar"></i></span>
                 <div class="invalid-feedback">
                   Valid first name is required.
-                </div>
+                </div></div>
               </div>
             </div><!-- end row -->
 
             <div class="row"> 
               <div class="col mb-3">
+                <div class="form-group">
                 <label for="email">Dirección</label>
                 <input type="text" class="form-control" id="direccion_alumno" placeholder="Dirección" required="">
                 <div class="invalid-feedback">
                   Please enter a valid email address for shipping updates.
-                </div>
+                </div></div>
               </div>
             </div><!-- end row -->
             
@@ -152,68 +193,76 @@
             
             <div class="row">
               <div class="col-8 col-md-8 mb-3">
+                <div class="form-group">
                 <label for="nombre_madre">Nombres y Apellidos de la Madre</label>
                 <input type="text" class="form-control" id="nombre_madre" placeholder="" required="">
                 <small class="text-muted">Nombre completo</small>
                 <div class="invalid-feedback">
                   Name on card is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="ci_madre">Cedula de Identidad</label>
                 <input type="text" class="form-control" id="ci_madre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
             </div>
             <div class="row">
               <div class="col-8 col-md-8 mb-3">
+                <div class="form-group">
                 <label for="empresa_madre">Empresa Donde Trabaja</label>
                 <input type="text" class="form-control" id="empresa_madre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Name on card is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="telefono_madre">N° de Teléfono</label>
                 <input type="text" class="form-control" id="telefono_madre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
             </div>
             <div class="row">
               <div class="col-8 col-md-8 mb-3">
+                <div class="form-group">
                 <label for="nombre_padre">Nombres y Apellidos del Padre</label>
                 <input type="text" class="form-control" id="nombre_padre" placeholder="" required="">
                 <small class="text-muted">Nombre completo</small>
                 <div class="invalid-feedback">
                   Name on card is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="ci_padre">Cedula de Identidad</label>
                 <input type="text" class="form-control" id="ci_padre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
             </div>
             <div class="row">
               <div class="col-8 col-md-8 mb-3">
+                <div class="form-group">
                 <label for="empresa_padre">Empresa Donde Trabaja</label>
                 <input type="text" class="form-control" id="empresa_padre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Name on card is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="telefono_padre">N° de Teléfono</label>
                 <input type="text" class="form-control" id="telefono_padre" placeholder="" required="">
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
             </div>
 
@@ -224,21 +273,24 @@
             
             <div class="row">
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="nombre_representante">Nombres y Apellidos</label>
                 <input type="text" class="form-control" id="nombre_representante" placeholder="" required="">
                 <small class="text-muted">Nombre completo</small>
                 <div class="invalid-feedback">
                   Name on card is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="ci_representante">Cedula de Identidad</label>
                 <input type="text" class="form-control" id="ci_representante" placeholder="" required="">
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="parentesco">Parentesco</label>
                 <select class="custom-select d-block w-100" id="parentesco" required="">
                   <option value="">Seleccione...</option>
@@ -248,44 +300,48 @@
                 </select>
                 <div class="invalid-feedback">
                   Credit card number is required
-                </div>
+                </div></div>
               </div>
             </div>
 
             <div class="row"> 
               <div class="col mb-3">
+                <div class="form-group">
                 <label for="direc_representante">Dirección</label>
                 <input type="text" class="form-control" id="direc_representante" placeholder="Dirección" required="">
                 <div class="invalid-feedback">
                   Please enter a valid email address for shipping updates.
-                </div>
+                </div></div>
               </div>
             </div><!-- end row -->
 
             <div class="row">              
-              <div class="col-4 col-md-4 mb-3">                
+              <div class="col-4 col-md-4 mb-3"> 
+              <div class="form-group">               
                 <label for="profesion">Profesión</label>
                 <input type="text" class="form-control" id="profesion" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                   Please select a valid state.
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="empre_repres">Empresa</label>
                 <input type="text" class="form-control" id="empre_repres" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                   Valid last name is required.
-                </div>
+                </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
+                <div class="form-group">
                 <label for="tele_repre">Número Telefonico</label>
                 <input type="text" class="form-control" id="tele_repre" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                   Valid first name is required.
-                </div>
+                </div></div>
               </div>
             </div><!-- end row -->
-            <br>
+            
             <hr class="mb-4">
             <button class="btn btn-success btn-lg" type="submit">Enviar</button>
           </form>
