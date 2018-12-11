@@ -11,7 +11,6 @@ session_start();
     <title>SIGANE | Inicio Sesión</title>
     <!-- Core CSS - Include with every page -->
     <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
-    <!--  <link rel="stylesheet" href="assets/css/compiled-4.5.15.min.css" /> -->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
     <link href="assets/css/floating-labels.css" rel="stylesheet"/>
@@ -30,26 +29,25 @@ session_start();
             
      <form class="form-signin border">
       <div class="text-center mb-4">
-        <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>       
       </div>
 
       <div class="form-label-group">
         <label for="username">Usuario</label>
-        <input type="text" id="username" class="form-control" placeholder="Usuario" required autofocus>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required autofocus>
       </div>
 
       <div class="form-label-group">      
         <label for="password">Password</label>
-        <input type="password" id="password" class="form-control" value="" placeholder="Password" required>
+        <input type="password" id="password" name="password" class="form-control" value="" placeholder="Password" required>
       </div>
 
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me"> Recordar usuario
+          <input type="checkbox" name="remember" value="remember-me"> Recordar usuario
         </label>
       </div>
-      <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
+      <button class="btn btn-lg btn-info btn-block" type="submit" id="Entrar">Entrar</button>
       
      </form> 
     </div></div>
