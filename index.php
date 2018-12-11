@@ -16,7 +16,6 @@ session_start();
     <link href="assets/css/floating-labels.css" rel="stylesheet"/>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/main-style.css" rel="stylesheet" />
-      <!-- Custom styles for this template -->   
 
 </head>
 
@@ -24,35 +23,39 @@ session_start();
     
 
     <div class="container">
-       
-       <div class="row">
-            
-     <form class="form-signin border">
-      <div class="text-center mb-4">
-        <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>       
-      </div>
 
-      <div class="form-label-group">
-        <label for="username">Usuario</label>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required autofocus>
-      </div>
-
-      <div class="form-label-group">      
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" class="form-control" value="" placeholder="Password" required>
-      </div>
-
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" name="remember" value="remember-me"> Recordar usuario
-        </label>
-      </div>
-      <button class="btn btn-lg btn-info btn-block" type="submit" id="Entrar">Entrar</button>
-      
-     </form> 
-    </div></div>
+      <div class="py-5 text-center">
   
+        <img src="assets/img/Sigane2.png" alt="" />>
+       
+      </div>
 
+      <div class="row justify-content-center">
+        <div class="col-4">
+                      
+            <div class="panel-body">
+              
+            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus id="username">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" id ="password">
+                                </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="Remember Me">Recordar usuario
+                                        </label>
+                                    </div> 
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="Entrar">Entrar</button>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mensaje">
+                                </div>
+                            </fieldset>
+            </div>
+         
+        </div>
+      </div>  
+    </div>    
      <!-- Core Scripts - Include with every page -->
     <script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
