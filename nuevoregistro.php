@@ -1,21 +1,22 @@
 <?php
 #Salir si alguno de los datos no está presente
-if(!isset($_POST["nombres"]) || !isset($_POST["apellidos"]) || !isset($_POST["cedulaescolar"])) exit();
-
 #Si todo va bien, se ejecuta esta parte del código...
 
-include_once "base_de_datos.php";
-$nombres = $_POST["nombres"];
-$apellidos = $_POST["apellidos"];
-$cedulaescolar = $_POST["cedulaescolar"];
+include_once "conexion.php";
+$nombreusuario = $_POST["nombreusuario"];
+$cedula = $_POST["cedula"];
+$cargo = $_POST["cargo"];
+$tipousuario = $_POST["tipousuario"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 
-$sentencia = $base_de_datos->prepare("INSERT INTO alumnos(nombres, apellidos, cedula) VALUES (?, ?, ?);");
-$resultado = $sentencia->execute([$nombres, $apellidos, $cedulaescolar]);
+$sentencia = $conexion->prepare("INSERT INTO usuario(nombreusuario, cedulausuario, cargo, tipousuario, username, password) VALUES (?, ?, ?, ?, ?, ?)");
+$resultado = $sentencia->execute([$nombreusuario, $cedula, $cargo, $tipousuario, $username, $password]);
 
 if($resultado === TRUE){
 	
-	header("Location: ./checkout.html");
+	header("Location: ./index.html");
 	exit;
 }
 else echo "Algo salió mal. Por favor verifica que la tabla exista";
