@@ -1,5 +1,5 @@
 .header-user-dropdown {
-	background-color:#292c2f;
+	background-color:#0080ff;
 	box-shadow:0 1px 1px #ccc;
 	padding: 20px 40px;
 	height: 80px;
@@ -74,7 +74,7 @@
 .header-user-dropdown .header-limiter .header-user-menu{
 	position: relative;
 	float:right;
-	background-color:#3a3c3e;
+	background-color:#5dade2;
 	width:85px;
 	height:40px;
 	border-radius:2px;
@@ -122,7 +122,7 @@
 }
 
 .header-user-dropdown .header-user-menu ul li a.highlight{
-	color:#e9ac09;
+	color:#e74c3c;
 }
 
 .header-user-dropdown .header-user-menu img{
